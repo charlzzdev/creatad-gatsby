@@ -1,0 +1,87 @@
+.blog {
+  details {
+    margin: 1.5rem auto;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    padding: 1.5rem;
+    
+    &:focus-within {
+      border: 2px solid #222;
+    }
+    
+    summary {
+      position: relative;
+      cursor: pointer;
+    
+      &::-webkit-details-marker {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #efefef;
+        padding: 0.5rem;
+        border-radius: 50%;
+      }
+      
+      &:focus {
+        outline: 0;
+      }
+  
+      p {
+        margin-bottom: 0;
+      }
+
+      .date {
+        font-size: 0.75rem;
+        color: #555;
+      }
+    }
+    
+    .content {
+      margin-top: 1.5rem;
+    }
+    
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    h3 {
+      margin: 0.75rem 0;
+    }
+    
+    h4 {
+      margin: 0.5rem 0;
+    }
+    
+    p {
+      margin: 1rem 0;
+      word-break: break-word;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    hr {
+      margin: 2rem 0;
+    }
+    
+    ul, ol {
+      margin-left: 1rem;
+    
+      p {
+        margin: 0;
+      }
+    }
+    
+    blockquote {
+      border-left: 6px solid #eee;
+      padding-left: 1rem;
+    }
+  }
+
+  .more-blog-posts-btn{
+    display: block;
+    margin: 0 auto;
+  }
+}
+

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: url('../assets/main/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main{
+  padding-top: 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 2px solid #222;
+  transition: 200ms;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-field{
+  position: relative;
+}
+
+::placeholder{
+  color: transparent;
+}
+
+.input-field label{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: #fff;
+  padding: 0 0.25rem;
+  color: #444;
+}
+
+input, textarea{
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  font-size: 16px;
+}
+
+.link-btn{
+  border: 0 !important;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+button, .btn{
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 200ms;
+}
+
+button:hover, .btn:hover{
+  background: #444;
+  transform: scale(1.025) translateY(-2px);
+  box-shadow: 0 4px 0 #222;
+}
+
+button:active, .btn:active{
+  transform: scale(0.975);
+  box-shadow: none;
+}
+
+:focus{
+  outline: 1px solid #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.offer-card {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 2rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.offer-card h3 {
+  margin-bottom: 1.5rem;
+}
+
+.offer-card ul {
+  margin-left: 1.5rem;
+  list-style-image: url('/assets/checkmark-black.svg');
+}
+
+.offer-card ul li {
+  padding-left: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.infoblock{
+  position: fixed !important;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 500px;
+}
+
+@media(max-width: 1325px){
+  .infoblock{
+    width: 40%;
+  }
+}
+
+@media(max-width: 1200px) {
+  body {
+    background-size: unset;
+    background-position: -180px 0;
+  }
+}
+
+@media(max-width: 700px){
+  .infoblock{
+    width: 55%;
+  }
+}

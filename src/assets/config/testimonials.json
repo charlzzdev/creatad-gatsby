@@ -1,0 +1,52 @@
+{
+  "testimonials": {
+    "bora": {
+      "id": "bora",
+      "name": "Bora Bracelets",
+      "title": null,
+      "text": null
+    },
+    "fo": {
+      "id": "fo",
+      "name": "Forró Édua",
+      "title": null,
+      "text": null
+    },
+    "lbt": {
+      "id": "lbt",
+      "name": "LBT Stylist",
+      "title": "Lánczos Benkő Tímea Stylist:",
+      "text": "„Kedves jelenlétével mindig olyan irányba terel, ami a leginkább kihozza belőled az előnyeidet. rávilágít a kreatív lehetőségeidre és szuper ötletekkel támogat.”"
+    },
+    "my": {
+      "id": "my",
+      "name": "My Little Pillow",
+      "title": "My Little Pillow – Varga Zsuzsanna:",
+      "text": "„Nikivel való közös munka során lenyűgöző volt Niki rendelkezésre állása, segítőkészsége és szakmai tudása. Maximálisan ajánlom őt.” "
+    },
+    "nail": {
+      "id": "nail",
+      "name": "The Nail Bar Pécs",
+      "title": null,
+      "text": null
+    },
+    "pont": {
+      "id": "pont",
+      "name": "Pont",
+      "title": "A Pont csapata:",
+      "text": "„Mindig naprakész és figyelmes! Nem csak precízen és hozzáértéssel teszi a munkáját, de igazán ráérez arra, mire van szüksége a megrendelőnek. Friss és lendületes magatartását a legnagyobb szívvel ajánljuk Mindenkinek!”"
+    },
+    "ts": {
+      "id": "ts",
+      "name": "Twistshake",
+      "title": "Twistshake Hungary – Sándor Adrienn:",
+      "text": "„Ha facebook vagy instagram, akkor Nikit válaszd! Nagyon kreatív, szuper ötletekkel, emellett végtelenül kedves és türelmes. Folyamatosan képezi magát és szereti az újdonságot. Munkája gyors és eredményes! Vele együtt fél év alatt elértük azt, amit egyedül évekig tartott volna. Ezúton is köszönjük neki!”"
+    },
+    "universitas": {
+      "id": "universitas",
+      "name": "Universitas",
+      "title": "PTE ÁOK – Dr. Duga Zsófia:",
+      "text": "„Karunk Instagram és Facebook oldalának áttervezésére, újragondolására kerestünk szakembert, s bemutatkozó munkái alapján Nikit választottuk, s nem csalódtunk! Kreatív, lendületes és dinamikus. Érződik, hogy szereti, amivel foglalkozik.”"
+    }
+  }
+}

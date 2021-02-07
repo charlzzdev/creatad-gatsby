@@ -1,0 +1,78 @@
+.references h1, .blog h1 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-top: 4rem;
+}
+
+.references .cards{
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+}
+
+.card {
+  height: auto;
+  overflow: hidden;
+}
+
+.card .img-wrapper * {
+  width: 100%;
+  transition: opacity 300ms;
+  cursor: pointer;
+}
+
+.testimonials{
+  max-width: 80%;
+  min-height: 10rem;
+  margin: 4rem auto;
+  position: relative;
+}
+
+.testimonials::before{
+  content: '„';
+  font-size: 4rem;
+  color: #e2e2e2;
+  line-height: 1;
+  position: absolute;
+  left: -3.5rem;
+  bottom: 0;
+}
+
+.testimonials::after{
+  content: '”';
+  font-size: 4rem;
+  color: #e2e2e2;
+  line-height: 1;
+  position: absolute;
+  right: -3rem;
+  top: 0;
+}
+
+.testimonials h2{
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 850px) {
+  .references .cards{
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+@media(max-width: 720px) {
+  .references .cards{
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .testimonials {
+    max-width: unset;
+  }
+
+  .testimonials::before{
+    left: -1rem;
+    bottom: -2rem;
+  }
+
+  .testimonials::after{
+    right: -1rem;
+    top: -2rem;
+  }
+}

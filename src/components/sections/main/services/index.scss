@@ -1,0 +1,23 @@
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+.services--cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 720px) {
+  .services--cards {
+    flex-direction: column;
+  }
+
+  .services--cards .offer-card {
+    width: 100%;
+  }
+
+  .services--cards .offer-card:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
