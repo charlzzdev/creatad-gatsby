@@ -1,36 +1,37 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
+import { withoutSpecialChars } from '../../../../utils';
 import './index.scss';
 
-const Blog = () => {
+const Blog = ({ allPosts }) => {
   const { allContentfulBlogPost } = useStaticQuery(query);
-  const [displayAmount, setDisplayAmount] = useState(3);
+  const displayAmount = allPosts ? allContentfulBlogPost.edges.length : 3;
 
   return (
-    <section className="blog container" id="blog">
+    <section className={`blog container ${allPosts ? 'blog-full-page' : ''}`} id="blog">
       <h1>Blog</h1>
       <div>
         {
           allContentfulBlogPost.edges.slice(0, displayAmount).map(({ node }) => (
-            <details key={node.id}>
-              <summary>
-                <h2>{node.title}</h2>
-                <div className="date">{new Date(node.createdAt).toLocaleDateString()}</div>
-                <div>{renderRichText(node.summary)}</div>
-              </summary>
-              <div className="content">{renderRichText(node.content)}</div>
-            </details>
+            <Link
+              to={`/blog/${withoutSpecialChars(node.title)}`}
+              className="blog-post-link"
+              key={node.id}
+            >
+              <h2>{node.title}</h2>
+              <div className="date">{new Date(node.updatedAt).toLocaleDateString()}</div>
+              <div>{node.seoDescription}</div>
+            </Link>
           ))
         }
       </div>
       {
         displayAmount < allContentfulBlogPost.edges.length && (
-          <button
-            onClick={() => setDisplayAmount(allContentfulBlogPost.edges.length)}
-            className="more-blog-posts-btn"
-          >Összes megtekintése</button>
+          <Link
+            to="/blog"
+            className="btn more-blog-posts-btn"
+          >Összes megtekintése</Link>
         )
       }
     </section>
@@ -42,15 +43,10 @@ export const query = graphql`
     allContentfulBlogPost {
       edges {
         node {
-          content {
-            raw
-          }
           id
-          createdAt
+          updatedAt
           title
-          summary {
-            raw
-          }
+          seoDescription
         }
       }
     }

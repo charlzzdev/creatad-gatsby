@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import './index.scss';
@@ -24,17 +25,17 @@ const Header = ({ logoSrc }) => {
   return (
     <header className={headerClassName}>
       <div className="container">
-        <a href="#" className="logo"><Img fluid={logoSrc} alt="Logo" /></a>
+        <Link to="/#" className="logo"><Img fluid={logoSrc} alt="Logo" /></Link>
         <div className="menu" role="button" tabIndex="0">
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
         <nav>
-          <a href="#bemutatkozas">Bemutatkozás</a>
-          <a href="#referenciak">Referenciák</a>
-          <a href="#blog">Blog</a>
-          <a href="#kapcsolat">Kapcsolat</a>
+          <Link to="/#bemutatkozas">Bemutatkozás</Link>
+          <Link to="/#referenciak">Referenciák</Link>
+          <Link to="/#kapcsolat">Kapcsolat</Link>
+          <Link to="/blog">Blog</Link>
         </nav>
       </div>
     </header>
