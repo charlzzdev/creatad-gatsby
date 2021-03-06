@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <title>CreatAd</title>
         <meta property="og:url" content="https://creatad.info" />
-        <meta property="og:image" content="https://creatad.info/logo.png" />
+        <meta property="og:image" content="https://creatad.info/logo_lg.png" />
         <meta property="og:description" content="Kreatív marketing szolgáltatások" />
         <meta name="description" content="Kreatív marketing szolgáltatások" />
       </Helmet>

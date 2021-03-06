@@ -44,7 +44,7 @@ const BlogPage = ({ data, pathContext, location }) => {
       <Helmet>
         <title>{title} - CreatAd</title>
         <meta property="og:url" content={`https://creatad.info${location.pathname}`} />
-        <meta property="og:image" content="https://creatad.info/logo.png" />
+        <meta property="og:image" content="https://creatad.info/logo_lg.png" />
         <meta property="og:description" content={seoDescription} />
         <meta name="description" content={seoDescription} />
       </Helmet>
