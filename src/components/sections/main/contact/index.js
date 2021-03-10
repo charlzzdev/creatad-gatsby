@@ -6,7 +6,10 @@ const Contact = () => {
   return (
     <section className="contact container" id="kapcsolat">
       <h1>Kapcsolat</h1>
-      <form name="contact" method="POST" data-netlify="true">
+      <p className="small-text-info main-email-info">Ha nem válaszolok 2 napon belül, akkor írj manuálisan emailt a <a href="mailto:kapcsolat@creatad.info">kapcsolat@creatad.info</a> címre.</p>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="check">
+        <p hidden>Ezt ne töltsd ki: <input type="text" name="check" /></p>
+        <input type="hidden" name="form-name" value="contact" />
         <div className="input-field">
           <input type="text" name="name" id="name" placeholder="Név" />
           <label htmlFor="name">Név</label>
