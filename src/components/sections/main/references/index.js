@@ -29,6 +29,16 @@ const References = () => {
 
   const handleChangeTestimonial = key => setActiveTestimonialIndex(getCompleteTestimonial(key));
 
+  const nextTestimonial = () => {
+    clearInterval(intervalId);
+    setActiveTestimonialIndex(completeTestimonials[activeTestimonialIndex + 1] ? activeTestimonialIndex + 1 : 0);
+  }
+
+  const prevTestimonial = () => {
+    clearInterval(intervalId);
+    setActiveTestimonialIndex(completeTestimonials[activeTestimonialIndex - 1] ? activeTestimonialIndex - 1 : completeTestimonials.length - 1);
+  }
+
   return (
     <StaticQuery
       query={graphql`
@@ -70,6 +80,16 @@ const References = () => {
           <div className="testimonials">
             <h2>{completeTestimonials[activeTestimonialIndex].title}</h2>
             <p>{completeTestimonials[activeTestimonialIndex].text}</p>
+          </div>
+          <div className="actions">
+            <button className="arrow-btn" onClick={prevTestimonial}>
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              Előző
+            </button>
+            <button className="arrow-btn" onClick={nextTestimonial}>
+              Következő
+              <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
           </div>
         </section>
       )}
