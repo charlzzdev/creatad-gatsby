@@ -10,7 +10,7 @@ const About = () => {
         Tárnoki Nikolett vagyok, anya, feleség, barát és munkatárs.
       </p>
       <p>
-        A közösségi média oldalak aktív használatával 2015 óta <strong>több sikeres márkát építettem fel</strong>,
+        A közösségi média oldalak aktív használatával 2015 óta <strong>több sikeres márka felépítésében vettem részt</strong>,
         segítettem ismertté tenni a magyar piacon.
       </p>
       <p>
