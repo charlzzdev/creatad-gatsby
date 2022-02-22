@@ -137,29 +137,9 @@ button:active, .btn:active{
   margin-bottom: 0.75rem;
 }
 
-.infoblock{
-  position: fixed !important;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  width: 500px;
-}
-
-@media(max-width: 1325px){
-  .infoblock{
-    width: 40%;
-  }
-}
-
 @media(max-width: 1200px) {
   body {
     background-size: unset;
     background-position: -180px 0;
-  }
-}
-
-@media(max-width: 700px){
-  .infoblock{
-    width: 55%;
   }
 }
