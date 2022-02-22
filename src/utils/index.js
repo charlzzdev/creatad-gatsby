@@ -6,6 +6,7 @@ module.exports = {
       .replace(/ő|ö|ó/gi, 'o')
       .replace(/ű|ü|ú/gi, 'u')
       .replace(/í/gi, 'i')
+      .replace(/\W/g, '')
       .toLowerCase();
   }
 };
