@@ -7,7 +7,7 @@ const About = () => {
     <section className="about container" id="bemutatkozas">
       <h2>Üdvözöllek!</h2>
       <p>
-        Tárnoki Nikolett vagyok, anya, feleség, barát és munkatárs.
+        Eller-Tárnoki Nikolett vagyok, anya, feleség, barát és munkatárs.
       </p>
       <p>
         A közösségi média oldalak aktív használatával 2015 óta <strong>több sikeres márka felépítésében vettem részt</strong>,
